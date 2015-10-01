@@ -1,0 +1,39 @@
+1. A Code Repository is an online or local service that hosts code sources and its related documents. 
+
+2. It is useful for programmers in order to save and develop their current codes. This is helped by the structure a repository has: projects can in fact be saved in main or secondary folders as to keep the main structure in one, whilst working on the aspects to develop in others.
+
+3. Software present in a machine are of different types
+•	Operatiing System: Is the main software which without a Computer wouldn`t work at all. It either communicates with the hardware and let different components interact with them and lets the Applications run on that computer;
+•	Utility Programs: They are software used for given tasks in order to keep or improve computer`s performances;
+•	Software Development Tools: These are programmes used to develop other softwares and help with their creation, maintenance and testing.
+•	
+4.  An Algorithm is the way that let us communicate with a machine. It converts a high level language (understandable by us) in to a binary code language that a machine can identify. It is composed by a strict sequence of commands to operate, generally implemented with key-words.
+
+5. “Recipe from http://betterthandormfood.com/2013/03/31/scrambled-eggs-for-one/”
+Get mixing bowl
+Pour  eggs and milk in mixing bowl
+THEN put teaspoon of sea salt
+THEN take fork
+Mix eggs and milk UNTIL foamy
+AFTER take frying pan
+pour egg mixture AND cook UNTIL moist
+
+6.Python uses either a compiler and an interpreter: you can write commands which the shell will execute or insert expressions that will return a value
+
+1)
+print("Hello World")
+
+2)
+print ("Hello World")
+print ("I am in my ISD class right now")
+   
+3)
+yourname = input("Please enter your name  ")
+print("Hello", yourname)
+print ("How are You?")
+
+4)
+numberone=int(input("Please enter number one  "))
+numbertwo=int(input ("please enter number two  "))
+result = numberone * numbertwo
+print("your result is ", result)
