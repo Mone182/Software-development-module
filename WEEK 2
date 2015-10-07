@@ -1,0 +1,88 @@
+1.	What will the output be from the following code? 13
+
+num=4
+num*=2
+num1=num+2
+num1+=3
+print(num1)
+
+2.	What do the following lines of code output? Why do they give a different answer?
+print(2 / 3)  0.6666666666666666
+print(2 // 3) 0
+They give different answers because the quotient / asks python simply to do divide whereas // is an integer quotient and therefore
+the result will be an integer, not a float.
+
+
+4.	Which of these variables names are not allowed in Python? (More than one might be wrong.)
+1Apple, 5Return and 2x: give syntax error (invalid syntax), a variable cannot begin with a number;
+account number: syntax error (invalid syntax), the space between the two words defines them as two variable;
+account.number, great.big.variable, give name error.
+
+5.	Explain the mistake in the following code:
+radius = input("Radius:")
+x = 3.14
+pi = x
+area = pi * radius ** 2
+
+The mistake, here, is due to the fact that the word radius in the equation is a string. It doesn`t refer to the value entered
+because in the input command, we haven`t specified that it will be an integer;
+It should`ve been so:
+radius = int(input("Radius:"))
+x = 3.14
+pi = x
+area = pi * radius ** 2
+
+6.	Explain the mistake in the following code:
+x = 4
+y = 5
+a = 3(x + y)
+* operand missing between 2 and the first bracket. As brackets are generally used for the commmands, that code is making
+python read 3 as a built-in function, that doesn`t exist.Therefore "`int` object is not callable", it's not an existing function.
+
+7.	Explain the mistake in the following code:
+radius = input(float("Enter the radius:"))
+The commands "input" and "float" are inverted. In this way "float" refers to "enter the radius" which is a string,
+not a float number. Therefore, "enter the radius" is not a float number, and can't obviously be converted into it.
+
+8.	Why does this code not calculate the average?
+print(3 + 4 + 5 / 3)
+It doesn't because the quotient / doesn't do it. The integer quotient // would have given 8.
+
+9.	Consider the following code:
+x = 19.93
+y = 20.00
+z = y – x
+print(z)
+
+10.	Find at least three compile-time errors:
+int x = 2;  "int" and "x" are two different strings
+Print (x, squared is, x * x); Print must be written with lower cases (print), quotation marks missing in brackets to define strings and differentiate them from values
+xcubed = x *** 3; *** not a valid operand
+
+11.	Find two run-time errors:
+from math import sqrt
+X = 2
+Y = 4
+print(“The product of “, x, “and”, y, “is”, x + y); THE PRODUCT IS NOT THE SUM, it should be x*y, not x+y
+print(“The root of their difference is “, sqrt(x – y)); x-y give a negative number
+
+12.	Write statements to prompt user for their name and age
+Write a print statement to output:
+Hello ____, next year you will be ____ years old
+
+username=input("Hello what's your name?   ")
+age=int(input("good, and how old are you?   "))
+print("Hello", username, "next year you will be", age+1, "years old")
+
+14.	What are the values of the following expressions, assuming that p is 17 and q is 18?
+i.	p // 10 + p % 10; 8
+ii.	p % 2  + q % 2; 1
+iii.	(p + q) // 2; type error unsupported operand
+iv.	(p + q) / 2.0; 35
+
+
+
+
+
+
+
