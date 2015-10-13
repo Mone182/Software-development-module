@@ -1,1 +1,46 @@
+1)1.	Which of the following conditions are true, if a is 13 and b is 14?
+>>> a=13
+>>> b=14
+>>> a+1<=b
+True
+>>> a+1>=b
+True
+>>> a+1!=b
+False
+
+2.	What is the error in this statement?
+if scoreA = scoreB :  
+        print("Tie")
+
+INVALID SYNTAX, = means assignment, not equal (==)
+
+3.	Supply a condition in this if statement to test whether the user entered a Y:
+userInput = input("Enter Y to quit.")
+if …
+print("Goodbye")
+
+
+
+4.	Find the errors in the following if statements.  Make corrections.
+if x > 0 then :
+       print(x)
+
+DON'T NEED "THEN"
+
+if 1 + x > x ** sqrt(2) :
+         y = y + x
+
+we need to add "import math" at the beginning or type "...x**math.sqrt(2)
+
+letterGrade = "F"
+if grade >= 90 :
+letterGrade = "A"
+if grade >= 80 :
+letterGrade = "B"
+if grade >= 70 :
+letterGrade = "C"
+if grade >= 60 :
+letterGrade = "D"
+
+AFTER FIRST "IF" WE HAVE TO TYPE "ELIF"
 
