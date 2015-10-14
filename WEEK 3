@@ -42,5 +42,25 @@ letterGrade = "C"
 if grade >= 60 :
 letterGrade = "D"
 
-AFTER FIRST "IF" WE HAVE TO TYPE "ELIF"
+AFTER FIRST "IF" WE HAVE TO TYPE "ELIF" for next conditions
+
+5.	Write a program that sets a password as ‘changeme’ and asks the user to enter the password and keeps asking until the correct password is entered and then says ‘Accepted’. 
+The program should count how many attempts the user has taken and tell them after they have been accepted. 
+Extra Challenge: 
+If the user takes more than 5 attempts the program should say, ‘Access denied, please press enter to exit and contact security to reset your password’
+
+password=input("enter your password to sign up \t")
+print("password set \n\n")
+
+count=0
+answer=input("please, enter your password \t")
+while count<5:
+    if answer==password:
+        print("accepted")
+    else:
+        count+=1
+        print("Denied, you have made", count, "attempts/5 \t")
+        answer=input("please, re-enter your password")
+if count==5:
+    command=input("Access denied, please press enter to exit and contact security to reset your password")
 
