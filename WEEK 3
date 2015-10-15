@@ -97,8 +97,22 @@ print()
 234
 345
 
-It will print a sequence of number 1 to 3 included whose get another sequence (j) added. the command print(i+j, end="")
+It will print a sequence of number 1 to 3 included, that will get another sequence (j) summed to. the command print(i+j, end="")
 tells python to display them horizontaly whereas the second command print() tells python to dived each added sequence with a
 separation, as if we pressed enter in a word document. it corresponds to the string command \n.
+
+8. Write a program that will generate a table to print powers of the first 5 numbers.  
+
+for i in range(1,4):
+    print("\t",i, end="")
+print()
+print("\tx"*3)
+print("-----------------------------")
+import math
+for j in range (1,6):
+    print("\t",j,end="")
+    print("\t",math.pow(j,2),end="")
+    print("\t",math.pow(j,3))
+
 
 
