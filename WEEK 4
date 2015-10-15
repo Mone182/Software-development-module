@@ -1,0 +1,25 @@
+Assume the following list:   a = [66.25, 333, 333, 1, 1234.5]
+
+If you perform the following operations on the list:
+
+a.insert(2, -1) ADDS THE NUMBER -1 AT THE SECOND POSITION, BETWEEN THE TWO 333
+a.append(333)   ADDS THE NUMBER 333 AT THE END OF LIST  
+
+Now you perform: 
+a.index(333)  
+
+a.remove(333)
+What will the list look like? IT REMOVES THE FIRST 333 PRESENT IN THE LIST
+
+a.reverse()
+ What will the list look like? IT SWAPS OVER THE POSITIONS OF THE ELEMENTS
+ 
+a.sort()
+What will the list look like?  IT SORTS THE ELEMENTS ACCORDING TO THE TYPE, IN THIS CASE, SORTS THE NUMBERS BY ASCENDING ORDER
+
+2. Write a short program to create a list of squares for numbers up to 10. 
+Start with an empty list called squares and append squares of numbers from 0 up to 10.
+
+
+
+
