@@ -21,5 +21,22 @@ What will the list look like?  IT SORTS THE ELEMENTS ACCORDING TO THE TYPE, IN T
 Start with an empty list called squares and append squares of numbers from 0 up to 10.
 
 
+Write a short program to create a list of squares for numbers up to 10. 
+Start with an empty list called squares and append squares of numbers from 0 up to 10.
 
+Print the contents of your list.
+
+[0.0, 1.0, 1.4142135623730951, 1.7320508075688772, 2.0, 2.23606797749979,
+2.449489742783178, 2.6457513110645907, 2.8284271247461903, 3.0, 3.1622776601683795]
+
+nums = []
+for x in [1,2,3]:
+         for y in [3,1,4]:
+                if x != y:
+                        nums.append((x, y))
+ print(nums)
+ 
+ [(1, 3), (1, 4), (2, 3), (2, 1), (2, 4), (3, 1), (3, 4)]
+ 
+ 
 
