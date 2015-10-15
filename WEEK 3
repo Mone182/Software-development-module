@@ -55,12 +55,50 @@ print("password set \n\n")
 count=0
 answer=input("please, enter your password \t")
 while count<5:
+    count+=1
     if answer==password:
         print("accepted")
+        print("you have made",count, "attempts")
+        break
     else:
-        count+=1
         print("Denied, you have made", count, "attempts/5 \t")
-        answer=input("please, re-enter your password")
+        answer=input("please, re-enter your password \t")
 if count==5:
-    command=input("Access denied, please press enter to exit and contact security to reset your password")
+    if answer!=password:
+        print("Access denied, please press enter to exit and contact security to reset your password")
+    if answer==password:
+        print("accepted")
+        print("you have made",count, "attempts")
+
+
+6. Using the flow chart below, construct the if..elif..else control structure.
+magnitude=float(input("What is the magnitude on the Richter Scale?\t"))
+
+if magnitude>=8.0:
+    print("\nmost structures fall")
+elif magnitude >=7.0:
+    print("many buildings destroyed")
+elif magnitude >=6.0:
+    print(" many buildings considerably damaged, some collapse")
+elif magnitude >=4.5:
+    print("Damage to poorly constructed buildings")
+else:
+    print("no destruction of buildings")
+    
+7. What do the following nested loops display?  Hand trace. 
+
+for i in range(3) :
+      for j in range(1, 4) :
+           print(i + j, end="")
+print()
+
+>>> 
+123
+234
+345
+
+It will print a sequence of number 1 to 3 included whose get another sequence (j) added. the command print(i+j, end="")
+tells python to display them horizontaly whereas the second command print() tells python to dived each added sequence with a
+separation, as if we pressed enter in a word document. it corresponds to the string command \n.
+
 
