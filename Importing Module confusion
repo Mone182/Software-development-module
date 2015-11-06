@@ -1,0 +1,30 @@
+Well, confusion is more mine than python's..
+
+HERE IS THE CLASS DEFINITION:
+
+class Student():
+    
+    def __init__(self, firstName="",lastName="",studentNumber="",course=""):
+        self.firstName=firstName
+        self.lastName=lastName
+        self.studentNumber=studentNumber
+        self.course=course
+
+    def showDetails(self):
+        print(firstName,"\n",lastName,"\n",studentNumber,"\n",course)
+
+    def askNewStudentDetails(self):
+        firstName=input("Enter the new student's first name, please\t")
+        lastName=input("Enter the new student's last name, please \t")
+        studentNumber=input("Enter the new student's number, please \t")
+        course=input("Enter the new student's course, please \t")
+
+
+AND THESE ARE THE COMMANDS IN A NEW IDLE WINDOW THAT DON'T EXECUTE FROM THE SAVED CLASS DEFINITION FILE:
+
+import Student
+
+showDetails(self)
+
+askNewStudentDetails(self)
+
