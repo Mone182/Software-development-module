@@ -1,0 +1,78 @@
+1a)
+
+class Book():
+    def __init__(self, title="", author="", year=""):
+        self.title=title
+        self.author=author
+        self.year=year
+
+    def askDetails(self):
+        self.title=input("whats the title of the book?\t")
+        self.author=input("Who is the author of this book?\t")
+        self.year=input("In what year was this book published?\t")
+
+    def BookInfo(self):
+        print("The title of the book is:\t", self.title)
+        print("The author of the book is:\t", self.author)
+        print("The year the book was published is:\t", self.year)
+
+default=Book()
+
+default.askDetails()
+default.BookInfo()
+
+
+1b)BOOK TEST
+from BookClass import Book
+
+newbook=Book()
+
+newbook.askDetails()
+
+editinfo=input("\nWould you like to change some of the info of the book?\t")
+while editinfo=="yes":
+    print()
+    newbook.BookInfo()
+    whichInfo=input("\nWhich of the info you would like to change?:\t")
+    while whichInfo=="title":
+        newTitle=input("please enter the new name:\t")
+        newbook.title=newTitle
+        newbook.BookInfo()
+        
+        editinfo=input("\nWould you like to change other info of the book?\t")
+        if editinfo=="yes":
+            newbook.BookInfo()
+            whichInfo=input("\nWhich of the info you would like to change?:\t")
+        else:
+                           print()
+        break
+        
+    while whichInfo=="author":
+        newAuthor=input("Who is the correct author of the book?\t")
+        newbook.author=newAuthor
+        newbook.BookInfo()
+
+        editinfo=input("\nWould you like to change other info of the book?\t")
+        if editinfo=="yes":
+            newbook.BookInfo()
+            whichInfo=input("\nWhich of the info you would like to change?:\t")
+        else:
+                           print()
+        break
+                           
+    while whichInfo=="year":
+        newYear=input("Enter the correct year of issue:\t")
+        newbook.year=newYear
+        newbook.BookInfo()
+
+        editinfo=input("\nWould you like to change other info of the book?\t")
+        if editinfo=="yes":
+            newbook.BookInfo()
+            wichInfo=input("\nWhich of the info you would like to change?:\t")
+        else:
+                           print()
+        break
+else:
+    newbook.BookInfo()
+    print("all done, than. Thank You")
+
