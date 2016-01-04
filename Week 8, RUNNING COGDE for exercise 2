@@ -1,0 +1,6 @@
+from carclass import Car
+
+default=Car()
+default.askDetails()
+default.changeDetails()
+default.onTheMove()
