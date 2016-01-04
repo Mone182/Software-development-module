@@ -1,0 +1,74 @@
+class Car:
+    def __init__ (self, manufacturer="", brand="", maxspeed=0, mileage=0, currentspeed=0):
+        self.manufacturer=manufacturer
+        self.brand=brand
+        self.maxspeed=maxspeed
+        self.mileage=mileage
+        self.currentspeed=currentspeed
+
+    def askDetails(self):
+        self.manufacturer=input("Type the manufacturer\t")
+        self.brand=input("Enter the brand of the car\t")
+        self.maxspeed=float(input("what is the car max speed?\t"))
+        self.mileage=float(input("what is the car mileage?\t"))
+        self.currentspeed=float(input("Please enter its currentspeed\t"))
+
+    def changeDetails(self):
+        print("\nCheck the details are correct.\n")
+        self.showDetails()
+        
+        answer=input("\nDo you want to change some car's details?\t")
+        
+        while answer !="yes" and answer !="no":
+            answer=input("Do you want to change some car's details?\t")
+            
+        while answer=="yes":
+            choice=input("""which of the info would you like to change?
+                        press 1 for - manufacturer
+                        press 2 for - brand
+                        press 3 for - max speed
+                        press 4 for - current speed
+                        press 5 for - mileage\n""")
+            
+            if choice =="1":
+                self.manufacturer=input("please enter a different manufacturer\t")
+            elif choice == "2":
+                self.brand=input("please entere the brand\t")
+            elif choice=="3":
+                self.maxspeed=float(input("enter the max speed of the car\t"))
+            elif choice=="4":
+                self.mileage=float(input("type the correct mileage\t"))
+            else:
+                self.currentspeed=float(input("type the actual current speed\t"))
+                
+            review=input("\nHappy with the changes?\t")
+            if review=="yes":
+                self.showDetails()
+                break
+                
+        if answer=="no":
+            print("\nThese are your car's details\n")
+            self.showDetails()
+                                   
+
+    def onTheMove(self):
+        if self.currentspeed>0:
+            import time
+            start=time.time()
+            time.clock()
+            input("\nPress enter whenever you want to stop the car and see the udpated mileage\n")
+            end=time.time()
+            self.mileage+=self.currentspeed*(end-start)/3600
+            print("this are your car's details\n")
+            print("time elapsed %.2f" % float(end-start),"\n")
+            self.showDetails()
+        #else:
+            #print("this are your car's details")
+            #self.showDetails()
+        
+
+    def showDetails(self):
+        print("MANUFACTURER\t", self.manufacturer, "\nBRAND\t", self.brand,
+              "\nMAXSPEED\t %.2f " % self.maxspeed, "\nCURRENT SPEED %.2f" %self.currentspeed,
+              "\nMILEAGE\t %.2f" % self.mileage)
+        
