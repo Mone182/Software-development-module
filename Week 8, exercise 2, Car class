@@ -71,4 +71,5 @@ class Car:
         print("MANUFACTURER\t", self.manufacturer, "\nBRAND\t", self.brand,
               "\nMAXSPEED\t %.2f " % self.maxspeed, "\nCURRENT SPEED %.2f" %self.currentspeed,
               "\nMILEAGE\t %.2f" % self.mileage)
+              
         
